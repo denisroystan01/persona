@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+.app {
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-scrollbar {
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header-section {
+  height: 70px;
+  background-color: #FDFDFD;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.top-section {
+  height: 100vh;
+  background-color: #F3F2F0;
+  padding-top: 70px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about-section {
+  height: 100vh;
+  background-color: #FDFDFD;
+  padding-top: 70px;
+}
+
+.skcert-section {
+  height: 100vh;
+  background-color: #F3F2F0;
+  padding-top: 70px;
+}
+
+.service-section {
+  height: 100vh;
+  background-color: #FDFDFD;
+  padding-top: 70px;
+}
+
+.project-section {
+  height: 100vh;
+  background-color: #F3F2F0;
+  padding-top: 70px;
+}
+
+.expedu-section {
+  height: 100vh;
+  background-color: #FDFDFD;
+  padding-top: 70px;
+}
+
+.blog-section {
+  height: 160px;
+  background-color: #F3F2F0;
+  padding-top: 70px;
+}
+
+.youtube-section {
+  height: 160px;
+  background-color: #FDFDFD;
+  padding-top: 70px;
+}
+
+.contact-section {
+  height: 100vh;
+  background-color: #F3F2F0;
+  padding-top: 70px;
+}
+
+.copyright-section {
+  height: 40px;
+  background-color: #FDFDFD;
+  padding-top: 70px;
 }
