@@ -2,6 +2,12 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './index.scss';
 
+// Components
+import Contact from '../contact/index';
+
+// Services
+import apiService from '../../services/api';
+
 // Plugins
 import { OverlayScrollbarsComponent } from 'overlayscrollbars-react';
 import 'overlayscrollbars/css/OverlayScrollbars.css';
@@ -12,6 +18,7 @@ function App() {
     .then(function (response) {
       // handle success
       console.log(response);
+      // apiService.post().then(function (por) {console.log(por)})
       setIsLoading(false);
     })
     .catch(function (error) {
@@ -76,10 +83,10 @@ function App() {
           <p>Youtube Section</p>
         </section>
         <section className="contact-section">
-          <p>Contact Section</p>
+          <Contact></Contact>
         </section>
         <section className="copyright-section">
-          <p>Copyright Section</p>
+          <footer className="page-footer"> <small>&copy; Copyright {new Date().getFullYear()}, Denis Roystan. All rights reserved.</small> </footer> 
         </section>
       </OverlayScrollbarsComponent>     
     </div>    

@@ -1,0 +1,15 @@
+// Background Styles
+.app-scrollbar {
+    .os-content {
+        & > section {
+            &:nth-child(even) {background-color: #F3F2F0;}
+            &:nth-child(odd) {background-color: #FDFDFD;}
+        }
+
+        & > section:not(.header-section):not(.copyright-section) {
+            padding-top: 70px;
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+    }     
+}

@@ -2,17 +2,12 @@
   height: 100vh;
 }
 
-p {
-  margin: 0;
-}
-
 .app-scrollbar {
   height: 100vh;
 }
 
 .header-section {
   height: 70px;
-  background-color: #FDFDFD;
   position: fixed;
   top: 0;
   left: 0;
@@ -21,60 +16,46 @@ p {
 
 .top-section {
   height: 100vh;
-  background-color: #F3F2F0;
-  padding-top: 70px;
 }
 
 .about-section {
   height: 100vh;
-  background-color: #FDFDFD;
-  padding-top: 70px;
 }
 
 .skcert-section {
   height: 100vh;
-  background-color: #F3F2F0;
-  padding-top: 70px;
 }
 
 .service-section {
   height: 100vh;
-  background-color: #FDFDFD;
-  padding-top: 70px;
 }
 
 .project-section {
   height: 100vh;
-  background-color: #F3F2F0;
-  padding-top: 70px;
 }
 
 .expedu-section {
   height: 100vh;
-  background-color: #FDFDFD;
-  padding-top: 70px;
 }
 
 .blog-section {
   height: 160px;
-  background-color: #F3F2F0;
-  padding-top: 70px;
 }
 
 .youtube-section {
   height: 160px;
-  background-color: #FDFDFD;
-  padding-top: 70px;
 }
 
 .contact-section {
   height: 100vh;
-  background-color: #F3F2F0;
-  padding-top: 70px;
 }
 
 .copyright-section {
   height: 40px;
-  background-color: #FDFDFD;
-  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .page-footer {
+  }
 }
