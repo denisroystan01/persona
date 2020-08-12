@@ -4,6 +4,11 @@ import './index.scss';
 
 // Components
 import Contact from '../contact/index';
+import Youtube from '../youtube/index';
+import Blog from '../blog/index';
+import About from '../about/index';
+import Service from '../service/index';
+import Project from '../project/index';
 
 // Services
 import apiService from '../../services/api';
@@ -62,25 +67,25 @@ function App() {
           <p>Banner Section</p>
         </section>
         <section className="about-section">
-          <p>About Section</p>
+          <About></About>
         </section>
         <section className="skcert-section">
           <p>Skill Certificate Section</p>
         </section>
         <section className="service-section">
-          <p>Service Section</p>
+          <Service></Service>
         </section> 
         <section className="project-section">
-          <p>Project Section</p>
+          <Project></Project>
         </section>
         <section className="expedu-section">
           <p>Experience Education Section</p>
         </section>
         <section className="blog-section">
-          <p>Blog Section</p>
+          <Blog></Blog>
         </section>
         <section className="youtube-section">
-          <p>Youtube Section</p>
+          <Youtube></Youtube>
         </section>
         <section className="contact-section">
           <Contact></Contact>
