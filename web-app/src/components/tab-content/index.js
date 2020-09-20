@@ -8,13 +8,13 @@ function tabSwitchLogic() {
     let tabContents = document.querySelectorAll('.tab-body .body-inner-section .single-tab-content');
     let tabs = document.querySelectorAll('.tab-header .header-inner-section .single-tab');
 
-    let hideTabContents = () => {
-        tabContents.forEach(singleTabBody => {
-            singleTabBody.style.display = 'none'
+    let hideTabContents = (showFirst) => {
+        tabContents.forEach((singleTabBody, index) => {
+            !(showFirst && (index === 0)) && (singleTabBody.style.display = 'none')
         })
     };
 
-    hideTabContents();    
+    hideTabContents(true);    
 
     tabs.forEach((singleTab, index) => {
         singleTab.onclick = (e) => {
