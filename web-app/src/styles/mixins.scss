@@ -1,0 +1,29 @@
+@mixin button($width, $height, $bgcolor, $txtcolor, $border: none, $fontsize: 14px, $fontweight: 400) {
+    width: $width;
+    height: $height;
+    border: $border;
+    background-color: $bgcolor;
+    color: $txtcolor;
+    font-size: $fontsize;
+    font-weight: $fontweight;
+}
+
+@mixin header($fontsize, $fontweight, $txtcolor, $italic: false) {
+    font-size: $fontsize;
+    font-weight: $fontweight;
+    color: $txtcolor;
+    
+    @if $italic {
+       font-style: italic;
+    }
+}
+
+@mixin text($fontsize, $fontweight, $txtcolor, $italic: false) {
+    font-size: $fontsize;
+    font-weight: $fontweight;
+    color: $txtcolor;
+    
+    @if $italic {
+       font-style: italic;
+    }
+}

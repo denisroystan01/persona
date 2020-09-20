@@ -9,6 +9,7 @@ import Blog from '../blog/index';
 import About from '../about/index';
 import Service from '../service/index';
 import Project from '../project/index';
+import TabContent from '../tab-content/index';
 
 // Services
 import apiService from '../../services/api';
@@ -69,8 +70,11 @@ function App() {
         <section className="about-section">
           <About></About>
         </section>
+        <section className="youtube-section">
+          <Youtube></Youtube>
+        </section>
         <section className="skcert-section">
-          <p>Skill Certificate Section</p>
+          <TabContent></TabContent>
         </section>
         <section className="service-section">
           <Service></Service>
@@ -83,12 +87,11 @@ function App() {
         </section>
         <section className="blog-section">
           <Blog></Blog>
-        </section>
-        <section className="youtube-section">
-          <Youtube></Youtube>
-        </section>
+        </section>        
         <section className="contact-section">
-          <Contact></Contact>
+          <div className="contact-outer-section">
+            <Contact></Contact>
+          </div>
         </section>
         <section className="copyright-section">
           <footer className="page-footer"> <small>&copy; Copyright {new Date().getFullYear()}, Denis Roystan. All rights reserved.</small> </footer> 
