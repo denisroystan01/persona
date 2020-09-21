@@ -10,6 +10,10 @@ import About from '../about/index';
 import Service from '../service/index';
 import Project from '../project/index';
 import TabContent from '../tab-content/index';
+import Certifications from '../certifications/index';
+import Skills from '../skills/index';
+import Education from '../education/index';
+import Experience from '../experience/index';
 
 // Services
 import apiService from '../../services/api';
@@ -74,7 +78,7 @@ function App() {
           <Youtube></Youtube>
         </section>
         <section className="skcert-section">
-          <TabContent></TabContent>
+          <TabContent childComponent={[Skills, Certifications]} HeaderText={['Skills', 'Certifications']} ClassRef={'skcert-section'}></TabContent>
         </section>
         <section className="service-section">
           <Service></Service>
@@ -83,7 +87,7 @@ function App() {
           <Project></Project>
         </section>
         <section className="expedu-section">
-          <p>Experience Education Section</p>
+          <TabContent childComponent={[Experience, Education]} HeaderText={['Experience', 'Education']} ClassRef={'expedu-section'}></TabContent>
         </section>
         <section className="blog-section">
           <Blog></Blog>

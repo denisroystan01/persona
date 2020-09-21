@@ -4,9 +4,9 @@ import './index.scss';
 // Services
 import apiService from '../../services/api';
 
-function tabSwitchLogic() {
-    let tabContents = document.querySelectorAll('.tab-body .body-inner-section .single-tab-content');
-    let tabs = document.querySelectorAll('.tab-header .header-inner-section .single-tab');
+function tabSwitchLogic(parentElement) {
+    let tabContents = document.querySelectorAll('.' + parentElement + ' .tab-body .body-inner-section .single-tab-content');
+    let tabs = document.querySelectorAll('.' + parentElement + ' .tab-header .header-inner-section .single-tab');
 
     let hideTabContents = (showFirst) => {
         tabContents.forEach((singleTabBody, index) => {
@@ -24,10 +24,17 @@ function tabSwitchLogic() {
     })
 }
 
-function TabContent() {
+function TabContent(props) {
+
+    const ComponentOne = props.childComponent[0];
+    const ComponentTwo = props.childComponent[1];
+
+    const ComponentOneHeaderText = props.HeaderText[0];
+    const ComponentTwoHeaderText = props.HeaderText[1];
 
     useEffect(() => {
-        tabSwitchLogic();
+        console.log(props)
+        tabSwitchLogic(props.ClassRef);
     }, []);
 
     return (        
@@ -36,17 +43,21 @@ function TabContent() {
                 <div className="tab-header">
                     <div className="header-inner-section">
                         <div className="single-tab">
-                            <div> Skills </div>
+                            <div> { ComponentOneHeaderText } </div>
                         </div>
                         <div className="single-tab">
-                            <div> Certificates </div>
+                            <div> { ComponentTwoHeaderText } </div>
                         </div>
                     </div>
                 </div>
                 <div className="tab-body">
                     <div className="body-inner-section">
-                        <div className="single-tab-content" data-ref="skills">Skills</div>
-                        <div className="single-tab-content" data-ref="certificates">Certificate</div>
+                        <div className="single-tab-content" data-ref="ComponentOne"> 
+                            <ComponentOne></ComponentOne> 
+                        </div>
+                        <div className="single-tab-content" data-ref="ComponentTwo">
+                            <ComponentTwo></ComponentTwo>
+                        </div>
                     </div>
                 </div>
             </section>

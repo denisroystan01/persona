@@ -1,0 +1,41 @@
+.tab-content {
+    .inner-section {
+        .tab-header {
+            text-align: right;
+            .header-inner-section {
+                display: inline-block;
+                margin-right: 50px;
+
+                .single-tab {
+                    position: relative;
+                    display: inline-block;
+                    padding: 8px 12px;
+                    background: #eeeeee;
+                    transform: skew(-30deg, 0deg);
+                    border-right: 3px solid;
+                    cursor: pointer;
+    
+                    > div {
+                        transform: skew(30deg, 0deg);
+                    }
+    
+                    &:first-child {
+                        background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+                    }
+    
+                    &:last-child {
+                        background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,1));
+                        border-left: 3px solid;
+                        border-right: 0;
+                    }
+                }
+            }            
+        }
+
+        .tab-body {
+            .single-tab-content {
+
+            }
+        }
+    }
+}
