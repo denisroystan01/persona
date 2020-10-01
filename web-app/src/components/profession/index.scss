@@ -1,0 +1,56 @@
+.profession {
+    .inner-section {
+        .inner-section-left {
+            display: table-cell;
+            width: 50%;
+
+            h1 {
+                font-size: 34px;
+                padding-right: 280px;
+            }
+
+            p {
+                font-size: 14px;
+                padding-right: 220px;
+            }
+        }
+
+        .inner-section-right {
+            display: table-cell;
+            width: 50%;
+
+            .first-section {
+                display: table-cell;
+                position: relative;
+            }
+
+            .second-section {
+                display: table-cell;
+                position: relative;
+                top: 30px;
+            }
+
+            .interest {
+                img {
+                    max-width: 24px;
+                    max-height: 24px;
+                    position: relative;
+                    left: 18px;
+                }
+
+                span {
+                    position: absolute;
+                    right: 22px;
+                }
+
+                width: 150px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                background-color: #f0f8ff;
+                position: relative;
+                margin: 20px 10px;
+            }
+        }
+    }
+}

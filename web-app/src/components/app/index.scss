@@ -40,7 +40,7 @@
 }
 
 .project-section {
-  height: 100vh;
+  height: calc(100vh + 200px);
   background-color: $background2;
 }
 
@@ -49,13 +49,8 @@
   background-color: $background1;
 }
 
-.blog-section {
-  height: 160px;
-}
-
-.youtube-section {
-  height: 160px;
-  background-color: $background1;
+.profession-section {
+  height: auto;
 }
 
 .contact-section {

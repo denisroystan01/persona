@@ -4,8 +4,7 @@ import './index.scss';
 
 // Components
 import Contact from '../contact/index';
-import Youtube from '../youtube/index';
-import Blog from '../blog/index';
+import Profession from '../profession/index';
 import About from '../about/index';
 import Service from '../service/index';
 import Project from '../project/index';
@@ -74,8 +73,8 @@ function App() {
         <section className="about-section">
           <About></About>
         </section>
-        <section className="youtube-section">
-          <Youtube></Youtube>
+        <section className="profession-section">
+          <Profession></Profession>
         </section>
         <section className="skcert-section">
           <TabContent childComponent={[Skills, Certifications]} HeaderText={['Skills', 'Certifications']} ClassRef={'skcert-section'}></TabContent>
@@ -88,9 +87,6 @@ function App() {
         </section>
         <section className="expedu-section">
           <TabContent childComponent={[Experience, Education]} HeaderText={['Experience', 'Education']} ClassRef={'expedu-section'}></TabContent>
-        </section>
-        <section className="blog-section">
-          <Blog></Blog>
         </section>        
         <section className="contact-section">
           <div className="contact-outer-section">

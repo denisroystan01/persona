@@ -1,0 +1,61 @@
+.certifications {
+    .inner-section {
+        h1 {
+            font-size: 34px;
+            margin-bottom: 25px;
+        }
+
+        .single-certificate {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 15px;
+            display: flex;
+            align-items: center;
+
+            .left-section {
+                display: table-cell;
+
+                img {
+                    max-width: 50px;
+                    max-width: 50px;
+                }
+            }
+
+            .right-section {
+                display: table-cell;
+                margin-left: 15px;
+                .certificate-name {
+                    span {
+                        font-size: 16px;
+                    }
+                }
+
+                .issued-by {
+                    span {
+                        font-size: 14px;
+                    }
+                }
+
+                .other-info {
+                    span {
+                        font-size: 14px;
+                        &:first-child {
+                            
+                        }
+
+                        &:last-child {
+
+                        }
+                    }
+                }
+
+                .see-credential {
+                    a {
+                        text-decoration: underline;
+                        color: #555;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

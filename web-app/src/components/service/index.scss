@@ -1,0 +1,76 @@
+.service {
+    box-sizing: border-box;
+    .inner-section {
+        width: 920px;
+        margin: 0 auto;
+
+        .service-header {
+            text-align: center;
+            margin-bottom: 25px;
+            span {
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+        }
+
+        .row {
+            display: flex;
+            margin-bottom: 35px;
+
+            .column {
+                display: flex;
+                flex: 50%;
+                padding: 10px;
+                height: 90px;
+
+                &:nth-child(odd) {
+                    padding-right: 50px;
+                }
+
+                &:nth-child(even) {
+                    padding-left: 50px;
+                }
+
+                .left-section {
+                    .image-fill {
+                        height: 60px;
+                        width: 60px;
+                        border-radius: 50%;
+                        background-color: blueviolet;
+                        overflow: hidden;
+                        position: relative;
+                        top: 10px;
+
+                        img {
+                            max-width: 100%;
+                            max-height: 100%; 
+                            object-fit: contain; 
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            margin: auto;                     
+                        }
+                    }                    
+                }
+
+                .right-section {
+                    margin-left: 15px;
+                    padding-right: 20px;
+                    h4 {
+                        font-size: 16px;
+                        margin-bottom: 5px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }       
+    }
+}
+  
+  

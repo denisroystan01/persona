@@ -11,11 +11,19 @@ function About() {
                 <div className="left-section"></div>
                 <div className="right-section">
                     <div className="right-inner-section">
-                        <h1>About Me</h1>
-                        <span className="headline-tag">I'm available for freelance projects, remote work or just for discussion. Have any project in mind?</span>
-                        <p className="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <button>Contact Me</button> 
-                        <button>Contact Me</button>
+                        <span className="greet-tag">Hello I'm</span>
+                        <h1>Denis Roystan</h1>
+                        <span className="headline-tag">
+                            <span>Software Engineer</span>
+                            <span>Data Scientist</span>
+                        </span>
+                        <p className="bio">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                            <br/>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                        </p>
+                        <button>Know More</button> 
+                        <button>Download CV</button>
                     </div>                    
                 </div>                
             </section>

@@ -1,0 +1,49 @@
+.education {
+    .inner-section {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 750px;
+        margin: 0 auto;
+        .row {
+            padding: 10px 10px;
+            display: flex;
+            align-items: center;
+
+            .item {
+
+                &:nth-child(odd) {
+                    margin-right: 10px;
+                }
+
+                &:nth-child(even) {
+                    margin-left: 10px;
+                }
+
+                border: 1px solid #999;
+                box-shadow: 0px 0px 3px 1px #ddd;
+                padding: 20px 10px;
+                h4 {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+
+                div {
+                    margin-bottom: 20px;
+                    > span {
+                        background-color: #6495ed;
+                        padding: 5px 10px;
+                        border-radius: 3px;
+                        font-size: 12px;
+                        color: #1f66e5;
+                        font-weight: bold;
+                    }
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

@@ -8,8 +8,60 @@ function Service() {
     return (
         <div className="service">
             <section className="inner-section">
-                <p>I'm available for freelance projects, remote work or just for discussion. Have any project in mind?</p>
-                <button>Contact Me</button>
+                <div className="service-header">
+                    <span>WHAT I DO</span>
+                    <h1>SPECILIZING IN</h1>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div className="left-section">
+                            <div className="image-fill">
+                                <img src="https://www.pikpng.com/pngl/m/572-5723259_icon-icons-cartoons-cartoon-cartoonizer-aesthetic-transparent-tumblr.png" />
+                            </div>
+                        </div>
+                        <div className="right-section">
+                            <h4>UI/UX</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div className="left-section">
+                            <div className="image-fill">
+                                <img src="https://www.pikpng.com/pngl/m/572-5723259_icon-icons-cartoons-cartoon-cartoonizer-aesthetic-transparent-tumblr.png" />
+                            </div>
+                        </div>
+                        <div className="right-section">
+                            <h4>Development</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="column">
+                        <div className="left-section">
+                            <div className="image-fill">
+                                <img src="https://www.pikpng.com/pngl/m/572-5723259_icon-icons-cartoons-cartoon-cartoonizer-aesthetic-transparent-tumblr.png" />
+                            </div>
+                        </div>
+                        <div className="right-section">
+                            <h4>UI/UX</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div className="left-section">
+                            <div className="image-fill">
+                                <img src="https://www.pikpng.com/pngl/m/572-5723259_icon-icons-cartoons-cartoon-cartoonizer-aesthetic-transparent-tumblr.png" />
+                            </div>
+                        </div>
+                        <div className="right-section">
+                            <h4>Development</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     )
