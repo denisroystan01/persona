@@ -8,7 +8,21 @@ function About() {
     return (
         <div className="about">
             <section className="inner-section">
-                <div className="left-section"></div>
+                <div className="left-section">
+                    <div className="left-inner-section">
+                        <div className="social-sphere">
+                            <div className="social-icons">
+                                <img src="/persona/assets/fb.png" className="facebook deg0" />
+                                <img src="/persona/assets/ig.png" className="instagram deg45" />
+                                <img src="/persona/assets/in.png" className="linkedin deg135" />
+                                <img src="/persona/assets/tw.png" className="twitter deg180" />
+                                <img src="/persona/assets/wa.png" className="whatsapp deg225" />
+                                <img src="/persona/assets/yt.png" className="youtube deg315" />
+                            </div>
+                            <div class="neumorphism-circle"></div>
+                        </div>                        
+                    </div>
+                </div>
                 <div className="right-section">
                     <div className="right-inner-section">
                         <span className="greet-tag">Hello I'm</span>

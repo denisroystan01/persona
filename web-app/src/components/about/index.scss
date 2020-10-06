@@ -1,9 +1,118 @@
 .about {
+    height: inherit;
     .inner-section {
+        height: inherit;
+        width: 960px;
+        margin: 0 auto;
+
         .left-section, .right-section {
             width: 50%;
             display: table-cell;
+            height: inherit;
         }
+
+        .left-section {
+            float: left;
+            display: flex;
+            justify-content: center;
+
+            .left-inner-section {
+                position: relative;                
+                left: -65px;
+                .social-sphere {
+                    position: relative;
+                    top: 95px;
+                    .social-icons {                        
+                        .facebook, .youtube, .instagram, .linkedin, .twitter, .whatsapp {
+                            max-width: 80px;
+                            max-height: 80px;
+                        }
+
+                        img {
+                            display: block;    
+                            position: absolute;
+                            top: 50%; 
+                            left: 50%;                            
+                            margin: -40px;
+                        }
+
+                        .deg0 {
+                            -webkit-transform: translate(8em);
+                            -moz-transform: translate(8em);
+                            -ms-transform: translate(8em);
+                            -o-transform: translate(8em);
+                            transform: translate(8em);
+                        }
+
+                        .deg45 {
+                            -webkit-transform: rotate(55deg) translate(8em) rotate(-55deg);
+                            -moz-transform: rotate(55deg) translate(8em) rotate(-55deg);
+                            -ms-transform: rotate(55deg) translate(8em) rotate(-55deg);
+                            -o-transform: rotate(55deg) translate(8em) rotate(-55deg);
+                            transform: rotate(55deg) translate(8em) rotate(-55deg);
+                        }
+
+                        .deg135 {
+                            -webkit-transform: rotate(125deg) translate(8em) rotate(-125deg);
+                            -moz-transform: rotate(125deg) translate(8em) rotate(-125deg);
+                            -ms-transform: rotate(125deg) translate(8em) rotate(-125deg);
+                            -o-transform: rotate(125deg) translate(8em) rotate(-125deg);
+                            transform: rotate(125deg) translate(8em) rotate(-125deg);
+                        }
+
+                        .deg180 {
+                            -webkit-transform: translate(-8em);
+                            -moz-transform: translate(-8em);
+                            -ms-transform: translate(-8em);
+                            -o-transform: translate(-8em);
+                            transform: translate(-8em);
+                        }
+
+                        .deg225 {
+                            -webkit-transform: rotate(235deg) translate(8em) rotate(-235deg);
+                            -moz-transform: rotate(235deg) translate(8em) rotate(-235deg);
+                            -ms-transform: rotate(235deg) translate(8em) rotate(-235deg);
+                            -o-transform: rotate(235deg) translate(8em) rotate(-235deg);
+                            transform: rotate(235deg) translate(8em) rotate(-235deg);
+                        }
+
+                        .deg315 {
+                            -webkit-transform: rotate(305deg) translate(8em) rotate(-305deg);
+                            -moz-transform: rotate(305deg) translate(8em) rotate(-305deg);
+                            -ms-transform: rotate(305deg) translate(8em) rotate(-305deg);
+                            -o-transform: rotate(305deg) translate(8em) rotate(-305deg);
+                            transform: rotate(305deg) translate(8em) rotate(-305deg);
+                        }
+                    }
+
+                    .neumorphism-circle {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 150px;
+                        width: 150px;
+                        background: #dde1e7;
+                        border-radius: 50%;
+                        box-shadow: -3px -3px 7px #ffffffa6, 3px 3px 5px rgba(94, 104, 121, 0.712);
+                        position: relative;                        
+
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            height: 80%;
+                            width: 80%;
+                            background-color: transparent;
+                            border-radius: 50%;
+                            box-shadow: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgba(94, 104, 121, 0.671);
+                            background-image: url('/persona/assets/person.png');
+                            background-repeat: no-repeat;
+                            background-size: 100%;
+                            background-position: center;
+                        }
+                    }
+                }
+            }
+        }        
 
         .right-section {
             .right-inner-section {

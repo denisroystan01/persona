@@ -3,6 +3,8 @@ import axios from 'axios';
 import './index.scss';
 
 // Components
+import Header from '../header/index';
+import Banner from '../banner/index';
 import Contact from '../contact/index';
 import Profession from '../profession/index';
 import About from '../about/index';
@@ -65,10 +67,10 @@ function App() {
           )}
         </header> */}
         <section className="header-section">
-          <p>Header/Menu Section</p>
+          <Header></Header>
         </section>
         <section className="top-section">
-          <p>Banner Section</p>
+          <Banner></Banner>
         </section>
         <section className="about-section">
           <About></About>

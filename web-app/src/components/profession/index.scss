@@ -1,24 +1,29 @@
 .profession {
+    height: inherit;
     .inner-section {
-        .inner-section-left {
-            display: table-cell;
-            width: 50%;
+        height: inherit;
+        width: 960px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
 
+        .inner-section-left {
+            height: inherit;
+            width: 65%;
             h1 {
                 font-size: 34px;
-                padding-right: 280px;
+                margin-bottom: 10px;
             }
 
             p {
                 font-size: 14px;
-                padding-right: 220px;
+                width: 400px;
             }
         }
 
         .inner-section-right {
-            display: table-cell;
-            width: 50%;
-
+            height: inherit;
+            width: 35%;
             .first-section {
                 display: table-cell;
                 position: relative;

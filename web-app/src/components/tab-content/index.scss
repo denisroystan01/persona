@@ -1,10 +1,13 @@
 .tab-content {
     .inner-section {
+        width: 960px;
+        margin: 0 auto;
+
         .tab-header {
             text-align: right;
+            
             .header-inner-section {
                 display: inline-block;
-                margin-right: 50px;
 
                 .single-tab {
                     position: relative;
