@@ -7,6 +7,7 @@ import apiService from '../../services/api';
 function Profession() {
     return (
         <div className="profession">
+            
             <section className="inner-section">
                 <section className="inner-section-left">
                     <div>

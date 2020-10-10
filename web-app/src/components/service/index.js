@@ -12,8 +12,8 @@ function Service() {
                     <span>WHAT I DO</span>
                     <h1>SPECILIZING IN</h1>
                 </div>
-                <div class="row">
-                    <div class="column">
+                <div className="row">
+                    <div className="column">
                         <div className="left-section">
                             <div className="image-fill">
                                 <img src="https://www.pikpng.com/pngl/m/572-5723259_icon-icons-cartoons-cartoon-cartoonizer-aesthetic-transparent-tumblr.png" />
@@ -24,7 +24,7 @@ function Service() {
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </div>
-                    <div class="column">
+                    <div className="column">
                         <div className="left-section">
                             <div className="image-fill">
                                 <img src="https://www.pikpng.com/pngl/m/572-5723259_icon-icons-cartoons-cartoon-cartoonizer-aesthetic-transparent-tumblr.png" />
@@ -38,8 +38,8 @@ function Service() {
                 </div>
 
 
-                <div class="row">
-                    <div class="column">
+                <div className="row">
+                    <div className="column">
                         <div className="left-section">
                             <div className="image-fill">
                                 <img src="https://www.pikpng.com/pngl/m/572-5723259_icon-icons-cartoons-cartoon-cartoonizer-aesthetic-transparent-tumblr.png" />
@@ -50,7 +50,7 @@ function Service() {
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </div>
-                    <div class="column">
+                    <div className="column">
                         <div className="left-section">
                             <div className="image-fill">
                                 <img src="https://www.pikpng.com/pngl/m/572-5723259_icon-icons-cartoons-cartoon-cartoonizer-aesthetic-transparent-tumblr.png" />

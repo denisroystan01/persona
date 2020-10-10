@@ -2,7 +2,8 @@
     box-sizing: border-box;
 
     .inner-section {
-        width: 960px;
+        max-width: 960px;
+        display: block;
         margin: 0 auto;
 
         .service-header {

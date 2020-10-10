@@ -74,22 +74,47 @@ function App() {
         </section>
         <section className="about-section">
           <About></About>
-        </section>
-        <section className="profession-section">
-          <Profession></Profession>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon class="svg--sm" fill="white" points="0,0 30,100 65,21 90,100 100,75 100,100 0,100"/>
+            <polygon class="svg--lg" fill="white" points="0,0 15,100 33,21 45,100 50,75 55,100 72,20 85,100 95,50 100,80 100,100 0,100" />
+          </svg>
         </section>
         <section className="skcert-section">
           <TabContent childComponent={[Skills, Certifications]} HeaderText={['Skills', 'Certifications']} ClassRef={'skcert-section'}></TabContent>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" preserveAspectRatio="none">
+            <circle fill="white" cx="0" cy="100" r="100" />
+            <circle fill="white" cx="200" cy="100" r="100" />
+          </svg>
+        </section>
+        <section className="project-section">
+          <Project></Project>
+          <div class="custom-shape-divider-bottom-1602356617">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+            </svg>
+          </div>
         </section>
         <section className="service-section">
           <Service></Service>
+          <div class="custom-shape-divider-bottom-1602356006">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
+            </svg>
+          </div>
         </section> 
-        <section className="project-section">
-          <Project></Project>
-        </section>
         <section className="expedu-section">
           <TabContent childComponent={[Experience, Education]} HeaderText={['Experience', 'Education']} ClassRef={'expedu-section'}></TabContent>
-        </section>        
+        </section> 
+        <section className="divider-5">
+          <div className="custom-shape-divider-top-1602341870">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M0,0V6c0,21.6,291,111.46,741,110.26,445.39,3.6,459-88.3,459-110.26V0Z" className="shape-fill"></path>
+            </svg>
+          </div>
+        </section>  
+        <section className="profession-section">
+          <Profession></Profession>
+        </section>
         <section className="contact-section">
           <div className="contact-outer-section">
             <Contact></Contact>

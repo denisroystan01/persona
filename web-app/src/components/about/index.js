@@ -19,7 +19,7 @@ function About() {
                                 <img src="/persona/assets/wa.png" className="whatsapp deg225" />
                                 <img src="/persona/assets/yt.png" className="youtube deg315" />
                             </div>
-                            <div class="neumorphism-circle"></div>
+                            <div className="neumorphism-circle"></div>
                         </div>                        
                     </div>
                 </div>

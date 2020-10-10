@@ -6,7 +6,8 @@
         position: relative;
         display: flex;
         align-items: center;
-        width: 960px;
+        max-width: 960px;
+        width: 100%;
         .logo {
             display: inline-block;
             padding-left: 15px;

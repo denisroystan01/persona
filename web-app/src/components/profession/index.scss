@@ -1,8 +1,10 @@
 .profession {
     height: inherit;
+    position: relative;
     .inner-section {
         height: inherit;
-        width: 960px;
+        max-width: 960px;
+        display: block;
         margin: 0 auto;
         display: flex;
         flex-direction: row;

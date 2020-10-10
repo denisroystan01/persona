@@ -8,17 +8,13 @@ function Skills() {
     return (
         <div className="skills">
             <section className="inner-section">
-                <div className="skill-item">
-                    <div class="set-size charts-container">
-                        <div class="pie-wrapper progress-70">
-                            <span class="label">HTML</span>
-                            <div class="pie">
-                                <div class="left-side half-circle"></div>
-                                <div class="right-side half-circle"></div>
-                            </div>
+                {[...Array(25)].map((x, i) =>
+                    <div className="box-wrapper" key={i}>
+                        <div className="box">
+                            <span>HTML</span>
                         </div>
                     </div>
-                </div>
+                )}
             </section>
         </div>
     )
