@@ -15,7 +15,6 @@
   left: 0;
   right: 0;
   z-index: 10;
-  //background: $header-background;
   box-shadow: 0px 0px 2px 2px #F7F7F7;
 
   border-bottom-left-radius: 50% 15%;
@@ -25,15 +24,14 @@
 
 .top-section {
   height: calc(100vh - 60px);
-  background-color: $background1;
   padding: 0 !important;
   margin-top: 60px;
+  background-image: linear-gradient(to right, rgb(227,227,227), rgb(250,250,250));
 }
 
 .about-section {
   height: auto;
-  background-color: $background2;
-  background-color: aliceblue;
+  background-color: $background1;
   position: relative;
   padding-bottom: 100px;
 
@@ -44,6 +42,10 @@
     height: 100px;
     left: 0;
     right: 0;
+
+    polygon {
+      fill: $background2;
+    }
   }
   
   @media (max-width: 699px) {
@@ -62,7 +64,6 @@
 .skcert-section {
   height: auto;
   background-color: $background2;
-  background-color: antiquewhite;
   position: relative;
   padding-bottom: 100px;
 
@@ -73,51 +74,18 @@
     height: 100px;
     left: 0;
     right: 0;
+
+    circle {
+      fill: $background1;
+    }
   }  
 }
 
-.service-section {
-  height: 100vh;
+.project-section {
+  height: auto;
   position: relative;
   background-color: $background1;
-  padding-bottom: 150px;
-
-  .custom-shape-divider-bottom-1602356006 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-  }
-
-  .custom-shape-divider-bottom-1602356006 svg {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 300px;
-    transform: rotateY(180deg);
-  }
-
-  .custom-shape-divider-bottom-1602356006 .shape-fill {
-    fill: #F5A623;
-  }
-
-  /** For tablet devices **/
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .custom-shape-divider-bottom-1602356006 svg {
-      width: 100%;
-      height: 300px;
-    }
-  }
-}
-
-.project-section {
-  height: calc(100vh + 200px);
-  position: relative;
-  background-color: $background2;
-  background-color: azure;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 
   .custom-shape-divider-bottom-1602356617 {
     position: absolute;
@@ -133,7 +101,7 @@
     position: relative;
     display: block;
     width: 100%;
-    height: 150px;
+    height: 100px;
     transform: rotateY(180deg);
   }
 
@@ -145,13 +113,50 @@
   @media (min-width: 768px) and (max-width: 1023px) {
     .custom-shape-divider-bottom-1602356617 svg {
       width: 100%;
-      height: 150px;
+      height: 100px;
+    }
+  }
+}
+
+.service-section {
+  height: auto;
+  position: relative;
+  background-color: $background2;
+  padding-bottom: 100px;
+  padding-top: 50px !important;
+
+  .custom-shape-divider-bottom-1602356006 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .custom-shape-divider-bottom-1602356006 svg {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100px;
+    transform: rotateY(360deg);
+  }
+
+  .custom-shape-divider-bottom-1602356006 .shape-fill {
+    fill: $background1;
+  }
+
+  /** For tablet devices **/
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-bottom-1602356006 svg {
+      width: 100%;
+      height: 100px;
     }
   }
 }
 
 .expedu-section {
-  height: 100vh;
+  height: auto;
   background-color: $background1;
   position: relative;
 }
@@ -159,20 +164,25 @@
 .profession-section {
   height: auto;
   position: relative;
+  background-color: $background2;
+  padding-bottom: 70px;
 }
 
 .contact-section {
-  height: 100vh;
+  height: auto;
   padding: 0 !important;
   width: 100%;
   display: table;
+  background-color: $background2;
+
   .contact-outer-section {
-    height: 100vh;
+    height: auto;
     clip-path: polygon(50% 150px, 100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 0%);
     background-color: $background1;
     padding-top: 150px;
     padding-right: 25px;
     padding-left: 25px;
+    padding-bottom: 100px;
   }
 }
 
@@ -182,8 +192,15 @@
   justify-content: center;
   align-items: center;
   background-color: $background1;
+  position: relative;
 
   .page-footer {
+    max-width: 960px;
+    flex: 1;
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px outset #dfe4f3;
+    padding-bottom: 10px;
   }
 }
 
@@ -192,36 +209,37 @@
   position: relative;
   width: 100%;
   display: block;
-  height: 300px;
+  height: 150px;
   padding: 0 !important;
+  background-color: $background2;
 
   .custom-shape-divider-top-1602341870 {
     position: absolute;
-    top: -100px;
+    top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    background-color: #FFFFFF;
+    background-color: $background2;
   }
   
   .custom-shape-divider-top-1602341870 svg {
     position: relative;
     display: block;
     width: calc(200% + 1.3px);
-    height: 300px;
+    height: 150px;
     transform: rotateY(180deg);
   }
   
   .custom-shape-divider-top-1602341870 .shape-fill {
-    fill: #F7F8FC;
+    fill: $background1;
   }
   
   /** For tablet devices **/
   @media (min-width: 768px) and (max-width: 1023px) {
     .custom-shape-divider-top-1602341870 svg {
       width: calc(300% + 1.3px);
-      height: 325px;
+      height: 150px;
     }
   }
 }

@@ -3,6 +3,13 @@
         max-width: 960px;
         display: block;
         margin: 0 auto;
+
+        h1 {
+            font-size: 34px;
+            margin-bottom: 25px;
+            padding: 0 10px;
+            text-align: center;
+        }
         
         .grid-layout {
             display: grid;

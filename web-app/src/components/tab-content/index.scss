@@ -6,9 +6,14 @@
 
         .tab-header {
             text-align: right;
+            position: relative;
+            height: 40px;
             
             .header-inner-section {
                 display: inline-block;
+                position: absolute;
+                top: 0;
+                right: -60px;
 
                 .single-tab {
                     position: relative;
