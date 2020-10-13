@@ -7,19 +7,15 @@ body, html, h1, h2, h3, h4, h5, h6, p, button, span {
 
 // Button Styles
 button {
-    @include button(200px, 60px, #fdb813, #ffffff, '', 18px, 600);
+    @include button(200px, 60px, #fec110, #ffffff, '', 18px, 600);
 }
 
 // Background Styles
 .app-scrollbar {
     .os-content {
         width: 100%;
-        & > section {            
-            //&:nth-child(even) {background-color: #F3F2F0;}
-            //&:nth-child(odd) {background-color: #FDFDFD;}
-        }
 
-        & > section:not(.header-section):not(.copyright-section) {
+        & > section:not(.header-section):not(.copyright-section):not(.top-section) {
             padding-top: 70px;
             padding-right: 25px;
             padding-left: 25px;

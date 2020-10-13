@@ -1,8 +1,34 @@
 import React, { useState, useEffect } from 'react';
 import './index.scss';
 
+import { NavHashLink } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
+
 // Services
 import apiService from '../../services/api';
+
+var links = [
+    {
+        sectionId: 'about',
+        label: 'About Me'
+    },
+    {
+        sectionId: 'projects',
+        label: 'Projects'
+    },
+    {
+        sectionId: 'service',
+        label: 'Services'
+    },
+    {
+        sectionId: 'interests',
+        label: 'Interests'
+    },
+    {
+        sectionId: 'contact',
+        label: 'Contact'
+    }
+]
 
 function Header() {
     return (
@@ -15,27 +41,20 @@ function Header() {
                 <div className="menu">
                     <div className="inner-list">
                         <ul className="list-group">
-                            <li className="item">
-                                <a href="#">About Me</a>
-                            </li>
-                            <li className="item">
-                                <a href="#">Lorem</a>
-                            </li>
-                            <li className="item">
-                                <a href="#">Services</a>
-                            </li>
-                            <li className="item">
-                                <a href="#">Projects</a>
-                            </li>
-                            <li className="item">
-                                <a href="#">Lorem</a>
-                            </li>
-                            <li className="item">
-                                <a href="#">Lorem</a>
-                            </li>
-                            <li className="item">
-                                <a href="#">Contact</a>
-                            </li>
+                            {links.map((elem, i) =>
+                                (
+                                    <li className="item" key={i}>
+                                        <NavHashLink
+                                        smooth 
+                                        to={elem.sectionId}
+                                        elementId={elem.sectionId}
+                                        activeClassName="active"
+                                        >
+                                            {elem.label}
+                                        </NavHashLink>
+                                    </li>
+                                )
+                            )}
                         </ul>
                     </div>
                 </div>

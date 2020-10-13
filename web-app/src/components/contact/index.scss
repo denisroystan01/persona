@@ -8,6 +8,21 @@
 
         h1 {
             font-size: 34px;
+            position: relative;
+            padding-bottom: 20px;
+
+            &:before {
+                position: absolute;
+                content: "";
+                bottom: 0;
+                left: 0;
+                width: 100px;
+                height: 4px;
+                background: #feb633;
+                transition: all 0.3s;
+                right: 0;
+                margin: 0 auto;
+            }
         }
 
         p {
@@ -20,7 +35,25 @@
         }
 
         button {
+            background-color: #fec110;
+            font-size: 14px;
+            padding: 22px 38px;
+            font-weight: 500;
+            color: #fff;
+            background: #fec110;
+            transition: all 0.5s;
+            border: 1px solid #fec110;
+            border-radius: 2px;
+            text-transform: uppercase;
+            box-shadow: none;
+            line-height: 1;
+            outline: 0;
+            cursor: pointer;
 
+            &:hover {
+                color: #fec110!important;
+                background: transparent;                
+            }
         }
     }
 }

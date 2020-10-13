@@ -4,6 +4,9 @@ import './index.scss';
 // Services
 import apiService from '../../services/api';
 
+// Plugins
+import { HashLink } from 'react-router-hash-link';
+
 function About() {
     return (
         <div className="about">
@@ -36,8 +39,17 @@ function About() {
                             <br/>
                             <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
                         </p>
-                        <button>Know More</button> 
-                        <button>Download CV</button>
+                        <button className="know-more">                            
+                            <HashLink
+                            smooth 
+                            elementId="experience"
+                            >
+                                Know More
+                            </HashLink>
+                        </button> 
+                        <button className="resume">
+                            <HashLink to="#">Download CV</HashLink>                            
+                        </button>
                     </div>                    
                 </div>                
             </section>

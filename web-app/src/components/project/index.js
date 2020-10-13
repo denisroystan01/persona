@@ -8,7 +8,7 @@ function Project() {
     return (
         <div className="project">
             <section className="inner-section">
-                <h1>Latest Projects</h1>
+                <h1>Latest Works</h1>
                 <div className="grid-layout">
                     <div className="grid-item grid-item-1 span-1">item 1</div>
                     <div className="grid-item grid-item-2">item 2</div>

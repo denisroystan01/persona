@@ -7,8 +7,31 @@
         h1 {
             font-size: 34px;
             margin-bottom: 25px;
-            padding: 0 10px;
+            padding: 0 10px 8px 10px;
             text-align: center;
+            position: relative;
+
+            &:before {
+                content: "";
+                width: 100px;
+                height: 2px;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                background: #fec110;
+            }
+
+            &:after {
+                content: "";
+                width: 60px;
+                height: 2px;
+                position: absolute;
+                bottom: -5px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: #fec110;
+            }
         }
         
         .grid-layout {

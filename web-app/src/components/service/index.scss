@@ -9,12 +9,36 @@
         .service-header {
             text-align: center;
             margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 8px;
             span {
                 font-size: 14px;
             }
 
             h1 {
                 font-size: 34px;
+            }
+
+            &:before {
+                content: "";
+                width: 100px;
+                height: 2px;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                background: #fec110;
+            }
+
+            &:after {
+                content: "";
+                width: 60px;
+                height: 2px;
+                position: absolute;
+                bottom: -5px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: #fec110;
             }
         }
 

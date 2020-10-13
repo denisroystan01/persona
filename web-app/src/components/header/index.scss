@@ -30,17 +30,29 @@
                         
                         a {
                             text-decoration: none;
+                            color: #2c2c2c;
+                            transition: all 0.3s;
 
                             &:before {
                                 content: '';
                                 position: absolute;
-                                bottom: 7px;
-                                border-bottom: 2px solid #eee;
-                                width: 30%;
+                                bottom: 2px;
+                                height: 2px;
+                                width: 0;
+                                background-color: #feb633;
+                                transition: all 0.3s;
                             }
     
                             &:before {
                                 left: 15px;
+                            }
+
+                            &.active, &:hover {
+                                color: #FFA327;
+
+                                &:before {
+                                    width: 30%;
+                                }
                             }
                         }
                     }

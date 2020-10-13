@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './components/app/index';
 import * as serviceWorker from './serviceWorker';
+import { HashRouter } from 'react-router-dom';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <HashRouter>
+      <App />
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

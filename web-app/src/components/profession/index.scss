@@ -15,9 +15,34 @@
             h1 {
                 font-size: 34px;
                 margin-bottom: 10px;
+                padding-bottom: 8px;
+                position: relative;
+
+                &:before {
+                    content: "";
+                    width: 100px;
+                    height: 2px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    transform: translateX(0);
+                    background: #fec110;
+                }
+
+                &:after {
+                    content: "";
+                    width: 60px;
+                    height: 2px;
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    transform: translateX(0);
+                    background: #fec110;
+                }
             }
 
             p {
+                padding-top: 20px;
                 font-size: 14px;
                 width: 400px;
             }
@@ -25,7 +50,10 @@
 
         .inner-section-right {
             height: inherit;
-            width: 35%;
+            width: auto;
+            position: relative;
+            top: 10px;
+
             .first-section {
                 display: table-cell;
                 position: relative;
@@ -42,21 +70,31 @@
                     max-width: 24px;
                     max-height: 24px;
                     position: relative;
-                    left: 18px;
+                    left: 25px;
                 }
 
                 span {
                     position: absolute;
-                    right: 22px;
+                    right: 35px;
+                    font-weight: 500;
+                    font-size: 20px;
                 }
 
-                width: 150px;
-                height: 60px;
+                width: 200px;
+                height: 80px;
                 display: flex;
                 align-items: center;
                 background-color: #f0f8ff;
                 position: relative;
                 margin: 20px 10px;
+                background-image: -webkit-linear-gradient(40deg, #fec110 0%, #fbd214 100%);
+                color: #fff;
+                transition: all 0.5s;
+                box-shadow: 0px 10px 20px 0px rgba(57, 42, 0, 0.14);
+
+                &:hover {
+                    box-shadow: none;
+                }
             }
         }
     }
