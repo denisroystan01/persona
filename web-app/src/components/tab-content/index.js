@@ -10,7 +10,7 @@ function tabSwitchLogic(parentElement) {
 
     let hideTabContents = (showFirst) => {
         tabContents.forEach((singleTabBody, index) => {
-            !(showFirst && (index === 0)) && (singleTabBody.style.display = 'none')
+            !(showFirst && (index === 0)) && (singleTabBody.style.display = 'none') && (tabs[index].classList.remove('active-tab'))
         })
     };
 
@@ -19,6 +19,7 @@ function tabSwitchLogic(parentElement) {
     tabs.forEach((singleTab, index) => {
         singleTab.onclick = (e) => {
             hideTabContents();
+            singleTab.classList.add('active-tab')
             tabContents[index].style.display = 'block'
         }
     })
@@ -42,7 +43,7 @@ function TabContent(props) {
             <section className="inner-section">
                 <div className="tab-header">
                     <div className="header-inner-section">
-                        <div className="single-tab">
+                        <div className="single-tab active-tab">
                             <div> { ComponentOneHeaderText } </div>
                         </div>
                         <div className="single-tab">

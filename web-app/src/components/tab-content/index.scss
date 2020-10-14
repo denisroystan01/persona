@@ -18,24 +18,47 @@
                 .single-tab {
                     position: relative;
                     display: inline-block;
-                    padding: 8px 12px;
+                    padding: 12px 30px 12px 18px;
                     background: #eeeeee;
                     transform: skew(-30deg, 0deg);
-                    border-right: 3px solid;
+                    border-right: 8px solid #fea80c;
                     cursor: pointer;
+                    position: relative;
+                    right: -4px;
+                    font-size: 16px;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    letter-spacing: 0.5px;
     
                     > div {
                         transform: skew(30deg, 0deg);
                     }
+
+                    &.active-tab {
+                        &:first-child {
+                            box-shadow: -3px 3px 7px rgba(94, 104, 121, 0.712), 3px 3px 5px #ffffffa6;
+                            position: relative;
+                            z-index: 1;
+                        }
+
+                        &:last-child {
+                            box-shadow: -3px -3px 7px #ffffffa6, 3px 3px 5px rgba(94, 104, 121, 0.712);
+                        }
+                    }
     
                     &:first-child {
-                        background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+                        //background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+                        background-image: linear-gradient(to left, #febd47, #fffcf6);
+                        padding: 12px 18px 12px 30px;
                     }
     
                     &:last-child {
-                        background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,1));
-                        border-left: 3px solid;
+                        //background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,1));
+                        background-image: linear-gradient(to right, #febd47, #fffcf6);
+                        border-left: 8px solid #fea80c;
                         border-right: 0;
+                        position: relative;
+                        left: -4px;
                     }
                 }
             }            
@@ -46,5 +69,17 @@
 
             }
         }
+    }
+}
+
+.skcert-section {
+    .single-tab {
+        color: #F7F8FC;
+    }
+}
+
+.expedu-section {
+    .single-tab {
+        color: #FEFEFF;
     }
 }
