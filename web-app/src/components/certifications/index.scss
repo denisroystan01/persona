@@ -1,12 +1,14 @@
 .certifications {
     .inner-section {
+        margin-bottom: 75px;
+        
         h1 {
             font-size: 34px;
             margin-bottom: 25px;
         }
 
         .single-certificate {
-            border-bottom: 1px solid #ccc;
+            border-bottom: 1px solid #e1e6f1;
             padding-bottom: 15px;
             display: flex;
             align-items: center;
@@ -26,18 +28,26 @@
                 .certificate-name {
                     span {
                         font-size: 16px;
+                        font-family: 'Roboto Slab', serif;
+                        color: #32333c;
                     }
                 }
 
                 .issued-by {
                     span {
                         font-size: 14px;
+                        font-family: 'Playfair Display', serif;
+                        color: #727b86;
                     }
                 }
 
                 .other-info {
                     span {
-                        font-size: 14px;
+                        font-size: 13px;
+                        font-family: 'Playfair Display', serif;
+                        color: #555555;
+                        letter-spacing: 0.5px;
+                        
                         &:first-child {
                             
                         }
@@ -51,8 +61,11 @@
                 .see-credential {
                     a {
                         text-decoration: underline;
-                        color: #555;
+                        color: #8a8fa3;
                         font-size: 12px;
+                        font-family: 'Playfair Display', serif;
+                        font-style: italic;
+                        letter-spacing: 0.5px;
                     }
                 }
             }

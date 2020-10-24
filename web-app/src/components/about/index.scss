@@ -160,18 +160,21 @@
             .right-inner-section {
                 .greet-tag {
                     padding: 6px 18px;
-                    background-color: aqua;
                     border-radius: 65px 45px 45px 0px;
                     font-size: 12px;
                     margin-bottom: 10px;
                     display: inline-block;
                     background-color: #fed04b;
+                    font-family: 'Playfair Display', serif;
+                    color: #fff;
+                    letter-spacing: 0.5px;
                 }   
 
                 h1 {
                     font-size: 34px;
                     margin-bottom: 7px;
-                    color: #32333c;
+                    color: #022144;
+                    font-family: 'Roboto Slab', serif;
                 }
                 
                 .headline-tag {
@@ -180,19 +183,30 @@
                     margin-top: 10px;
                     span {
                         border: 1px solid #fec624;
-                        color: #022144;
+                        color: #555555;
                         border-radius: 4px;
                         padding: 4px 8px;
                         display: inline-block;
                         font-size: 11px;
                         margin-right: 10px;
+                        font-family: 'Playfair Display', serif;
+                        letter-spacing: 0.5px;
+                        text-transform: uppercase;
+                        font-weight: 500;
                     }                    
                 }
 
                 .bio {
                     font-size: 16px;
-                    margin-bottom: 20px;
+                    margin-bottom: 25px;
                     margin-top: 15px;
+                    font-family: 'Playfair Display', serif;
+                    font-style: italic;
+
+                    span {
+                        display: block;
+                        color: #8a8fa3;
+                    }
                 }
 
                 button {
@@ -209,17 +223,18 @@
                         color: #fff;
                         display: block;
                         height: inherit;
-                        line-height: 36px;
+                        line-height: 35px;
                         font-size: 12px;
-                        letter-spacing: 0.5px;
-                        font-weight: 400;
+                        letter-spacing: 0.8px;
+                        font-weight: 600;
+                        font-family: 'Playfair Display', serif;
                     }
 
                     &.know-more {
+                        border: 1px solid;
+                        border-color: #fec110;
                         &:hover {
                             background-color: #FFF;
-                            border: 1px solid;
-                            border-color: #fec110;
 
                             a {
                                 color: #fec110;

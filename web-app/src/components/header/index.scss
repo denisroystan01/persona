@@ -32,6 +32,10 @@
                             text-decoration: none;
                             color: #2c2c2c;
                             transition: all 0.3s;
+                            font-family: 'Playfair Display', serif;
+                            font-size: 14px;
+                            font-weight: 500;
+                            letter-spacing: 1px;
 
                             &:before {
                                 content: '';
@@ -48,7 +52,7 @@
                             }
 
                             &.active, &:hover {
-                                color: #FFA327;
+                                color: #feb633;
 
                                 &:before {
                                     width: 30%;

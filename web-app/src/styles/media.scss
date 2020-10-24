@@ -1,0 +1,32 @@
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .header-section {
+        .header {
+            .inner-section {
+                max-width: 768px;
+            }
+        }
+    }
+
+    .tab-content {
+        .inner-section {
+            .tab-header {
+                .header-inner-section {
+                    position: relative;
+                    right: 0;
+                }
+            }
+
+            .tab-body {
+                .body-inner-section {
+                    .single-tab-content {
+                        .certifications {
+                            .inner-section {
+                                max-width: 750px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

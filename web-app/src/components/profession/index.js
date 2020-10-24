@@ -13,28 +13,28 @@ function Profession() {
                     <div>
                         <h1>I do much more than just <br />work</h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Slow Progress Is Better Than No Progress, this is what I follow. I always try to enjoy life at its fullest, when I’m not on the job, I love gaming, listening music, working my way through a more experimental and creative approach to cooking and indulging my love for binge-watching on Netflix.
                         </p>
                     </div>                    
                 </section>
                 <section className="inner-section-right">
                     <div className="first-section">
-                        <div className="interest">
-                            <img src="https://www.iconfinder.com/data/icons/neutro-essential/32/link-24.png" alt="interest"/>
+                        <div className="interest passion-one">
+                            <img src="./persona/assets/interests/blog.svg" alt="interest"/>
                             <span>Blog</span>
                         </div>
-                        <div className="interest">
-                            <img src="https://www.iconfinder.com/data/icons/neutro-essential/32/link-24.png" alt="interest"/>
+                        <div className="interest passion-two">
+                            <img src="./persona/assets/interests/youtube.svg" alt="interest"/>
                             <span>Youtube</span>
                         </div>
                     </div>
                     <div className="second-section">
-                        <div className="interest">
-                            <img src="https://www.iconfinder.com/data/icons/neutro-essential/32/link-24.png" alt="interest"/>
+                        <div className="interest passion-three">
+                            <img src="./persona/assets/interests/freelance.svg" alt="interest"/>
                             <span>Freelance</span>
                         </div>
-                        <div className="interest">
-                            <img src="https://www.iconfinder.com/data/icons/neutro-essential/32/link-24.png" alt="interest"/>
+                        <div className="interest passion-four">
+                            <img src="./persona/assets/interests/gaming.svg" alt="interest"/>
                             <span>Gaming</span>
                         </div>
                     </div>

@@ -10,6 +10,8 @@
             padding: 0 10px 8px 10px;
             text-align: center;
             position: relative;
+            font-family: 'Roboto Slab', serif;
+            color: #022144;
 
             &:before {
                 content: "";
@@ -49,10 +51,9 @@
             font-weight: bold;
             text-transform: uppercase;
             color: #929796;
-            background-color: #333;
-            &:nth-child(odd) {
-                background-color: #424242;
-            }
+            border-radius: 15px;
+            border-style: double;
+            border-color: #edecec;
         }
         
         .span-2 {

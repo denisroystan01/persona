@@ -12,11 +12,17 @@
             position: relative;
             padding-bottom: 8px;
             span {
-                font-size: 14px;
+                font-size: 18px;
+                font-family: 'Playfair Display', serif;
+                font-weight: 500;
+                text-transform: capitalize;
+                color: #8a8fa3;
             }
 
             h1 {
                 font-size: 34px;
+                font-family: 'Roboto Slab', serif;
+                color: #022144;
             }
 
             &:before {
@@ -65,10 +71,10 @@
                         height: 60px;
                         width: 60px;
                         border-radius: 50%;
-                        background-color: blueviolet;
                         overflow: hidden;
                         position: relative;
                         top: 10px;
+                        border: 3px solid #fe9433;
 
                         img {
                             max-width: 100%;
@@ -88,10 +94,16 @@
                     h4 {
                         font-size: 16px;
                         margin-bottom: 5px;
+                        font-family: 'Roboto Slab', serif;
+                        letter-spacing: 0.5px;
+                        color: #32333c;
                     }
 
                     p {
                         font-size: 12px;
+                        font-family: 'Playfair Display', serif;
+                        font-style: italic;
+                        color: #8a8fa3;
                     }
                 }
             }

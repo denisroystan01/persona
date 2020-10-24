@@ -9,7 +9,7 @@ function Service() {
         <div className="service">
             <section className="inner-section">
                 <div className="service-header">
-                    <span>WHAT I DO</span>
+                    <span>What I do</span>
                     <h1>SPECILIZING IN</h1>
                 </div>
                 <div className="row">

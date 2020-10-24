@@ -7,6 +7,15 @@ import apiService from '../../services/api';
 // Plugins
 import { HashLink } from 'react-router-hash-link';
 
+var aboutData = {
+    greetTag: 'Hello I\'m',
+    name: 'Denis Roystan',
+    title: ['Software Engineer', 'Data Scientist'],
+    description: "<span>I'm a Full Stack Javascript Engineer with interest in Data Science and building unique modern mobile web app's. For over 3.7+ years, I've been working on multiple projects across different industries like Finance, Real Estate, Travel, Ecommerce from all over the globe.<\/span><br\/><span>Currently, I work as a software engineer, delivering products and services for our customers through developing, testing, maintaining software applications using the agile methodology.<\/span><br\/><span><strong>Competencies:<\/strong> <i>Data Science, Machine Learning, Python, Deep Learning, Web\/Mobile Development, MEAN\/MERN Stack, Web Analytics, & Web Services<\/i><\/span>",
+    button1: 'Know More',
+    button2: 'Get CV'
+}
+
 function About() {
     return (
         <div className="about">
@@ -46,27 +55,26 @@ function About() {
                 </div>
                 <div className="right-section">
                     <div className="right-inner-section">
-                        <span className="greet-tag">Hello I'm</span>
-                        <h1>Denis Roystan</h1>
+                        <span className="greet-tag">{ aboutData.greetTag }</span>
+                        <h1>{ aboutData.name }</h1>
                         <span className="headline-tag">
-                            <span>Software Engineer</span>
-                            <span>Data Scientist</span>
+                            {aboutData.title.map((title, index) => {
+                                return (<span key={index}>{title}</span>)
+                            })}                            
                         </span>
-                        <p className="bio">
-                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-                            <br/>
-                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                        <p className="bio" dangerouslySetInnerHTML={{__html: aboutData.description}}>
+                            
                         </p>
                         <button className="know-more">                            
                             <HashLink
                             smooth 
                             elementId="experience"
                             >
-                                Know More
+                                { aboutData.button1 }
                             </HashLink>
                         </button> 
                         <button className="resume">
-                            <HashLink to="#">Download CV</HashLink>                            
+                            <HashLink to="#">{ aboutData.button2 }</HashLink>                            
                         </button>
                     </div>                    
                 </div>                

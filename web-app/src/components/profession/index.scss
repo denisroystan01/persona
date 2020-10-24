@@ -17,6 +17,8 @@
                 margin-bottom: 10px;
                 padding-bottom: 8px;
                 position: relative;
+                font-family: 'Roboto Slab', serif;
+                color: #022144;
 
                 &:before {
                     content: "";
@@ -45,6 +47,8 @@
                 padding-top: 20px;
                 font-size: 14px;
                 width: 400px;
+                font-family: 'Playfair Display', serif;
+                color: #8a8fa3;
             }
         }
 
@@ -67,17 +71,15 @@
 
             .interest {
                 img {
-                    max-width: 24px;
-                    max-height: 24px;
                     position: relative;
-                    left: 25px;
                 }
 
                 span {
                     position: absolute;
-                    right: 35px;
+                    right: 15px;
                     font-weight: 500;
                     font-size: 20px;
+                    font-family: 'Roboto Slab', serif;
                 }
 
                 width: 200px;
@@ -95,6 +97,50 @@
 
                 &:hover {
                     box-shadow: none;
+                }
+
+                &.passion-one {
+                    img {
+                        max-width: 60px;
+                        max-height: 60px;
+                        left: 22px;
+                    } 
+
+                    span {
+                        right: 60px;
+                    }
+                }
+
+                &.passion-two {
+                    img {
+                        max-width: 55px;
+                        max-height: 55px;
+                        left: 15px;
+                    } 
+
+                    span {
+                        right: 30px;
+                    }
+                }
+
+                &.passion-three {
+                    img {
+                        max-width: 50px;
+                        max-height: 50px;
+                        left: 18px;
+                    } 
+                }
+
+                &.passion-four {
+                    img {
+                        max-width: 85px;
+                        max-height: 85px;
+                        left: 0px;
+                    }     
+                    
+                    span {
+                        right: 30px;
+                    }
                 }
             }
         }

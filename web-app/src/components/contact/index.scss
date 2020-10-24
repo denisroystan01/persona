@@ -10,6 +10,8 @@
             font-size: 34px;
             position: relative;
             padding-bottom: 20px;
+            font-family: 'Roboto Slab', serif;
+            color: #022144;
 
             &:before {
                 position: absolute;
@@ -27,16 +29,19 @@
 
         p {
             padding: 25px 0;
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
             
             span {
                 width: 445px;
                 display: inline-block;
+                color: #727b86;
             }
         }
 
         button {
             background-color: #fec110;
-            font-size: 14px;
+            font-size: 16px;
             padding: 22px 38px;
             font-weight: 500;
             color: #fff;
@@ -49,6 +54,8 @@
             line-height: 1;
             outline: 0;
             cursor: pointer;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
 
             &:hover {
                 color: #fec110!important;
