@@ -11,7 +11,7 @@ var aboutData = {
     greetTag: 'Hello I\'m',
     name: 'Denis Roystan',
     title: ['Software Engineer', 'Data Scientist'],
-    description: "<span>I'm a Full Stack Javascript Engineer with interest in Data Science and building unique modern mobile web app's. For over 3.7+ years, I've been working on multiple projects across different industries like Finance, Real Estate, Travel, Ecommerce from all over the globe.<\/span><br\/><span>Currently, I work as a software engineer, delivering products and services for our customers through developing, testing, maintaining software applications using the agile methodology.<\/span><br\/><span><strong>Competencies:<\/strong> <i>Data Science, Machine Learning, Python, Deep Learning, Web\/Mobile Development, MEAN\/MERN Stack, Web Analytics, & Web Services<\/i><\/span>",
+    description: "<span>I'm Full Stack JavaScript Engineer with interest in Data Science and building unique modern mobile web apps. For over 3.7+ years, I've worked on multiple projects across different industries like Finance, Real Estate, Travel, ECommerce and assisting clients from all over the globe.<\/span><br\/><span>Currently, I work as a Software Engineer, delivering products and services for our customers through developing, testing, maintaining software applications using the agile methodology.<\/span><br\/><span><strong>Competencies:<\/strong> <i>Data Science, Machine Learning, Python, Deep Learning, Web\/Mobile Development, MEAN\/MERN Stack, Web Analytics, & Web Services<\/i><\/span>",
     button1: 'Know More',
     button2: 'Get CV'
 }
@@ -74,7 +74,7 @@ function About() {
                             </HashLink>
                         </button> 
                         <button className="resume">
-                            <HashLink to="#">{ aboutData.button2 }</HashLink>                            
+                            <a href="/persona/documents/Denis-Dalmeida-CV.pdf" target="_blank">{ aboutData.button2 }</a>                            
                         </button>
                     </div>                    
                 </div>                

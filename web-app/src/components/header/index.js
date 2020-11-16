@@ -36,7 +36,7 @@ function Header() {
         <div className="header">
             <section className="inner-section">
                 <div className="logo">
-                    <img src="./persona/assets/logo.png" alt="logo" />
+                    <a href=""><img src="/persona/assets/logo.png" alt="logo" /></a>
                 </div>
                 <div className="menu">
                     <div className="inner-list">

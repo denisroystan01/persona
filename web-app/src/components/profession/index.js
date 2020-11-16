@@ -20,21 +20,21 @@ function Profession() {
                 <section className="inner-section-right">
                     <div className="first-section">
                         <div className="interest passion-one">
-                            <img src="./persona/assets/interests/blog.svg" alt="interest"/>
+                            <img src="/persona/assets/interests/blog.svg" alt="interest"/>
                             <span>Blog</span>
                         </div>
                         <div className="interest passion-two">
-                            <img src="./persona/assets/interests/youtube.svg" alt="interest"/>
+                            <img src="/persona/assets/interests/youtube.svg" alt="interest"/>
                             <span>Youtube</span>
                         </div>
                     </div>
                     <div className="second-section">
                         <div className="interest passion-three">
-                            <img src="./persona/assets/interests/freelance.svg" alt="interest"/>
+                            <img src="/persona/assets/interests/freelance.svg" alt="interest"/>
                             <span>Freelance</span>
                         </div>
                         <div className="interest passion-four">
-                            <img src="./persona/assets/interests/gaming.svg" alt="interest"/>
+                            <img src="/persona/assets/interests/gaming.svg" alt="interest"/>
                             <span>Gaming</span>
                         </div>
                     </div>

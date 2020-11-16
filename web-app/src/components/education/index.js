@@ -10,21 +10,21 @@ function Education() {
             <section className="inner-section">
                 <div className="row">
                     <div className="item">
-                        <h4>Master in Data Science</h4>
+                        <h4>MS in Data Science</h4>
                         <div>
-                            <span>2013 - 2016</span>
+                            <span>Currently Pursuing</span>
                         </div>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Learned python, excel, exploratory data analysis, widely used machine learning algorithms, time series analysis, and neural networks as part of academics. Also, worked on 10+ case studies and projects.
                         </p>
                     </div>
                     <div className="item">
-                        <h4>Master in Data Science</h4>
+                        <h4>Master of Computer Applications</h4>
                         <div>
-                            <span>2013 - 2016</span>
+                            <span>2017 - 2019</span>
                         </div>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Completed my post-graduation with an aggregate of 70%. Opened to blend of both theoretical and practical knowledge and seamlessly delve deeper into the world of computer science with the help of learning the modern programming languages, data structures, algorithms and database.
                         </p>
                     </div>
                 </div>
@@ -32,21 +32,21 @@ function Education() {
 
                 <div className="row">
                     <div className="item">
-                        <h4>Master in Data Science</h4>
+                        <h4>BS in Information Technology</h4>
                         <div>
                             <span>2013 - 2016</span>
                         </div>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            I've been through the core basics of computers and programming languages. I've worked on my first web project developed using PHP and Javascript. I've managed to get grade 'A' in the academic term.
                         </p>
                     </div>
                     <div className="item">
-                        <h4>Master in Data Science</h4>
+                        <h4>Intermediate Level</h4>
                         <div>
-                            <span>2013 - 2016</span>
+                            <span>2011 - 2013</span>
                         </div>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            I had taken Science as mainstream. During the academic term, I used to explore a lot and loved experimenting in lab and also gained vast knowledge in Physics and Mathematics.
                         </p>
                     </div>
                 </div>

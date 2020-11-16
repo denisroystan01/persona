@@ -24,6 +24,40 @@ import { OverlayScrollbarsComponent } from 'overlayscrollbars-react';
 import 'overlayscrollbars/css/OverlayScrollbars.css';
 
 function App() {
+  const debounce = (func, delay) => { 
+    let debounceTimer 
+    return function() { 
+        const context = this
+        const args = arguments 
+            clearTimeout(debounceTimer) 
+                debounceTimer 
+            = setTimeout(() => func.apply(context, args), delay) 
+    } 
+  }  
+
+  const scrollBody = () => {
+    let element = document.getElementsByClassName('os-viewport')[0];
+    element.addEventListener("scroll", debounce(() => {
+      let items = document.getElementsByClassName('menu')[0].children[0].children[0].children;
+
+      for (let elem of items) { 
+        elem.children[0].classList.remove('active'); 
+      } 
+
+      if(element.scrollTop >= 3855) {
+        items[4].children[0].classList.add('active');
+      } else if(element.scrollTop >= 3605) {
+        items[3].children[0].classList.add('active');
+      } else if(element.scrollTop >= 2111) {
+        items[2].children[0].classList.add('active');
+      } else if(element.scrollTop >= 1283) {
+        items[1].children[0].classList.add('active');
+      } else {
+        items[0].children[0].classList.add('active');
+      }      
+    }, 50));
+  }
+
   const getAsyncData = () => {
     axios.get('https://reqres.in/api/users?page=2')
     .then(function (response) {
@@ -49,6 +83,7 @@ function App() {
     setIsLoading(true);
     setTimeout(() => {
       getAsyncData();
+      scrollBody();
     }, 2000);    
   }, []);
 
@@ -69,9 +104,9 @@ function App() {
         <section className="header-section">
           <Header></Header>
         </section>
-        <section className="top-section">
+        {/* <section className="top-section">
           <Banner></Banner>
-        </section>
+        </section> */}
         <section className="about-section" id="about">
           <About></About>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
