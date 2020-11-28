@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './index.scss';
 
 // Services
-import apiService from '../../services/api';
+// import apiService from '../../services/api';
 
 function Profession() {
     return (
@@ -19,7 +19,7 @@ function Profession() {
                 </section>
                 <section className="inner-section-right">
                     <div className="first-section">
-                        <a href="https://medium.com/@denisroystan" target="_blank">
+                        <a href="https://medium.com/@denisroystan" target="_blank" rel="noopener noreferrer">
                             <div className="interest passion-one">
                                 <img src="/persona/assets/interests/blog.svg" alt="interest"/>
                                 <span>Blog</span>

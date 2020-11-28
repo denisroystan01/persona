@@ -4,7 +4,7 @@ import './index.scss';
 
 // Components
 import Header from '../header/index';
-import Banner from '../banner/index';
+// import Banner from '../banner/index';
 import Contact from '../contact/index';
 import Profession from '../profession/index';
 import About from '../about/index';
@@ -17,7 +17,7 @@ import Education from '../education/index';
 import Experience from '../experience/index';
 
 // Services
-import apiService from '../../services/api';
+// import apiService from '../../services/api';
 
 // Plugins
 import { OverlayScrollbarsComponent } from 'overlayscrollbars-react';
@@ -91,7 +91,7 @@ function App() {
       // handle success
       console.log(response);
       // apiService.post().then(function (por) {console.log(por)})
-      setIsLoading(false);
+      // setIsLoading(false);
     })
     .catch(function (error) {
       // handle error
@@ -111,17 +111,17 @@ function App() {
     setIsMobileMenuOpen(state.isOpen)
   }
 
-  const [isLoading, setIsLoading] = useState(false);
+  // const [isLoading, setIsLoading] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
 
   useEffect(() => {
-    setIsLoading(true);
+    // setIsLoading(true);
     setTimeout(() => {
       getAsyncData();
       scrollBody();
     }, 2000);    
-  }, []);
+  });
 
   return (    
     <div className="app">

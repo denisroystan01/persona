@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './index.scss';
 
 import { NavHashLink } from 'react-router-hash-link';
 
 // Services
-import apiService from '../../services/api';
+// import apiService from '../../services/api';
 
 var links = [
     {
@@ -35,7 +35,7 @@ function Header() {
         <div className="header">
             <section className="inner-section">
                 <div className="logo">
-                    <a href=""><img src="/persona/assets/logo.png" alt="logo" /></a>
+                    <a href="javascript:void(0)"><img src="/persona/assets/logo.png" alt="logo" /></a>
                 </div>
                 <div className="menu">
                     <div className="inner-list">

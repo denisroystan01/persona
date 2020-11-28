@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './index.scss';
 
 // Services
-import apiService from '../../services/api';
+// import apiService from '../../services/api';
 
 function tabSwitchLogic(parentElement) {
     let tabContents = document.querySelectorAll('.' + parentElement + ' .tab-body .body-inner-section .single-tab-content');
@@ -36,7 +36,7 @@ function TabContent(props) {
     useEffect(() => {
         console.log(props)
         tabSwitchLogic(props.ClassRef);
-    }, []);
+    });
 
     return (        
         <div className="tab-content">

@@ -25,7 +25,7 @@ function Certifications() {
                             <span> No Expiration Date</span>
                         </div>
                         <div className="see-credential">
-                            <a href="https://www.credential.net/18457136-9200-4402-838e-36821609d847" target="_blank">See Credential</a>
+                            <a href="https://www.credential.net/18457136-9200-4402-838e-36821609d847" target="_blank" rel="noopener noreferrer">See Credential</a>
                         </div>
                     </div>
                 </div>
@@ -46,7 +46,7 @@ function Certifications() {
                             <span> No Expiration Date</span>
                         </div>
                         <div className="see-credential">
-                            <a href="javascript:void(0)" target="_blank">See Credential</a>
+                            <a href="javascript:void(0)" target="_blank" rel="noopener noreferrer">See Credential</a>
                         </div>
                     </div>
                 </div>
@@ -67,7 +67,7 @@ function Certifications() {
                             <span> No Expiration Date</span>
                         </div>
                         <div className="see-credential">
-                            <a href="https://certificates.mooc.fi/validate/now5f43e5od" target="_blank">See Credential</a>
+                            <a href="https://certificates.mooc.fi/validate/now5f43e5od" target="_blank" rel="noopener noreferrer">See Credential</a>
                         </div>
                     </div>
                 </div>

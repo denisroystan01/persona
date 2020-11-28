@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './index.scss';
 
 // Services
-import apiService from '../../services/api';
+// import apiService from '../../services/api';
 
 function Education() {
     return (
