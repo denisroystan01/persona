@@ -13,7 +13,7 @@ function Contact() {
                 <p> 
                     <span> I'd love to meet over a beer or a cup of coffee. I'm available for freelance projects, remote work or just for discussion. Have any project in mind? </span>
                 </p>
-                <button>Buzz Me</button>
+                <a href="https://denisroystan.typeform.com/to/qpiUmoH8" target="_blank"><button>Buzz Me</button></a>
             </section>
         </div>
         

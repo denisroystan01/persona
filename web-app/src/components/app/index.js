@@ -23,6 +23,33 @@ import apiService from '../../services/api';
 import { OverlayScrollbarsComponent } from 'overlayscrollbars-react';
 import 'overlayscrollbars/css/OverlayScrollbars.css';
 
+import { bubble as Menu } from 'react-burger-menu';
+
+import { NavHashLink } from 'react-router-hash-link';
+
+var links = [
+    {
+        sectionId: 'about',
+        label: 'About Me'
+    },
+    {
+        sectionId: 'projects',
+        label: 'Projects'
+    },
+    {
+        sectionId: 'service',
+        label: 'Services'
+    },
+    {
+        sectionId: 'interests',
+        label: 'Interests'
+    },
+    {
+        sectionId: 'contact',
+        label: 'Contact'
+    }
+]
+
 function App() {
   const debounce = (func, delay) => { 
     let debounceTimer 
@@ -76,7 +103,16 @@ function App() {
     });
   }
 
+  const shoot = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen)
+  }
+
+  const isMenuOpen = (state) => {
+    setIsMobileMenuOpen(state.isOpen)
+  }
+
   const [isLoading, setIsLoading] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
 
   useEffect(() => {
@@ -89,6 +125,23 @@ function App() {
 
   return (    
     <div className="app">
+      <Menu isOpen={ isMobileMenuOpen } onStateChange={ isMenuOpen } customBurgerIcon={ <img src="/persona/assets/menu.svg" /> } customCrossIcon={ <img src="/persona/assets/close.svg" /> }>
+          {links.map((elem, i) =>
+            (
+                <NavHashLink
+                onClick={shoot}
+                smooth 
+                to={elem.sectionId}
+                elementId={elem.sectionId}
+                activeClassName="active"
+                key={i} 
+                className="menu-item"
+                >
+                    {elem.label}
+                </NavHashLink>
+            )
+          )}
+      </Menu>
       <OverlayScrollbarsComponent className="app-scrollbar">
         {/* <header className="app-header">
           <p>
@@ -110,8 +163,8 @@ function App() {
         <section className="about-section" id="about">
           <About></About>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <polygon class="svg--sm" fill="white" points="0,0 30,100 65,21 90,100 100,75 100,100 0,100"/>
-            <polygon class="svg--lg" fill="white" points="0,0 15,100 33,21 45,100 50,75 55,100 72,20 85,100 95,50 100,80 100,100 0,100" />
+            <polygon className="svg--sm" fill="white" points="0,0 30,100 65,21 90,100 100,75 100,100 0,100"/>
+            <polygon className="svg--lg" fill="white" points="0,0 15,100 33,21 45,100 50,75 55,100 72,20 85,100 95,50 100,80 100,100 0,100" />
           </svg>
         </section>
         <section className="skcert-section" id="skills">
@@ -123,17 +176,17 @@ function App() {
         </section>
         <section className="project-section" id="projects">
           <Project></Project>
-          <div class="custom-shape-divider-bottom-1602356617">
+          <div className="custom-shape-divider-bottom-1602356617">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-              <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+              <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
             </svg>
           </div>
         </section>
         <section className="service-section" id="service">
           <Service></Service>
-          <div class="custom-shape-divider-bottom-1602356006">
+          <div className="custom-shape-divider-bottom-1602356006">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-              <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
+              <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" className="shape-fill"></path>
             </svg>
           </div>
         </section> 

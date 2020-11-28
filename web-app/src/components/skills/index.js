@@ -140,7 +140,7 @@ function Skills() {
                 {SkillArray.map((obj, i) => {
                         let style = {
                             color: obj.textColor || '#FFFFFF',
-                            'background-image': 'linear-gradient(19deg, ' + obj.lightColor + ' 0%, ' + obj.darkColor + ' 100%)'
+                            backgroundImage: 'linear-gradient(19deg, ' + obj.lightColor + ' 0%, ' + obj.darkColor + ' 100%)'
                         }
                         return (<div className="box-wrapper" key={i}>
                             <div className="box" style={style}>

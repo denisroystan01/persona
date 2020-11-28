@@ -29,6 +29,11 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script>
+      if (!window.location.hash.replace('#/', '')) {
+        window.location.href = window.location.origin + '/persona#/about'
+      }
+    </script>
     <div id="root"></div>
     <!--
       This HTML file is a template.

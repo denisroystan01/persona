@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './index.scss';
 
 import { NavHashLink } from 'react-router-hash-link';
-import { HashLink } from 'react-router-hash-link';
 
 // Services
 import apiService from '../../services/api';

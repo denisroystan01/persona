@@ -19,10 +19,12 @@ function Profession() {
                 </section>
                 <section className="inner-section-right">
                     <div className="first-section">
-                        <div className="interest passion-one">
-                            <img src="/persona/assets/interests/blog.svg" alt="interest"/>
-                            <span>Blog</span>
-                        </div>
+                        <a href="https://medium.com/@denisroystan" target="_blank">
+                            <div className="interest passion-one">
+                                <img src="/persona/assets/interests/blog.svg" alt="interest"/>
+                                <span>Blog</span>
+                            </div>
+                        </a>
                         <div className="interest passion-two">
                             <img src="/persona/assets/interests/youtube.svg" alt="interest"/>
                             <span>Youtube</span>

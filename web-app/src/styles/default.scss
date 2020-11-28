@@ -24,3 +24,19 @@ button {
         }
     }     
 }
+
+// Mobile Menu Hide
+.bm-burger-button {
+    display: none;
+    right: 5%;
+    left: auto;
+    width: 32px;
+    height: 32px;
+    top: 18px;
+}
+
+.bm-cross-button {
+    width: 32px !important;
+    height: 32px !important;
+    top: 18px !important;
+}

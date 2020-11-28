@@ -69,6 +69,7 @@ function About() {
                             <HashLink
                             smooth 
                             elementId="experience"
+                            to="experience"
                             >
                                 { aboutData.button1 }
                             </HashLink>

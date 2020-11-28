@@ -30,3 +30,275 @@
         }
     }
 }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .bm-burger-button {
+        display: block;
+    }
+
+    .header-section {
+        .header {
+            height: 100%;
+            .inner-section {
+                max-width: 90%;
+                .menu {
+                    display: none;
+                }
+            } 
+        }               
+    }
+
+    .about-section {
+        .about {
+            .inner-section {
+                .left-section {
+                    width: 100%;
+                    height: 335px;
+                    .left-inner-section {
+                        position: unset;
+                        margin: 0 auto;
+                    }
+                }
+
+                .right-section {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .service-section {
+        .service {
+            .inner-section {
+                .row {
+                    display: block;
+                    margin-bottom: 0;
+                    max-width: 80%;
+                    margin: 0 auto;
+
+                    .column {
+                        padding: 0;
+
+                        .right-section {
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .profession-section {
+        .profession {
+            .inner-section {
+                max-width: 90%;
+                display: block;
+
+                .inner-section-left {
+                    width: 100%;
+
+                    p {
+                        width: 100%;
+                        text-align: justify;
+                    }
+                }
+
+                .inner-section-right {
+                    top: 60px;
+                    display: flex;
+                    justify-content: center;
+                    > div {
+                        > div {
+                            margin: 20px 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        .inner-section {
+            margin-bottom: 35px;
+            .tab-header {
+                .header-inner-section {
+                    position: relative;
+                    right: 0;
+                }
+            }
+
+            .tab-body {
+                .body-inner-section {
+                    .single-tab-content {
+                        .certifications, .education {
+                            .inner-section {
+                                max-width: 90%;
+                            }
+                        }
+
+                        .certifications {
+                            .inner-section {
+                                margin-top: 25px;
+                            }
+                        }
+
+                        .skills {
+                            .box-wrapper {
+                                margin-right: 0;
+                                pointer-events: none;
+                                &:nth-child(2n) {
+                                    transform: rotateZ(180deg);
+                                    margin-top: 0;
+                                    .box {
+                                        border-radius: 50px;
+
+                                        span {
+                                            transform: rotateZ(180deg);
+                                        }
+
+                                        &:before {
+                                            transform: rotateZ(60deg);
+                                            border-radius: 50px;
+                                        }
+
+                                        &:after {
+                                            transform: rotateZ(-60deg);
+                                            border-radius: 50px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .experience {
+                            .inner-section {
+                                max-width: 90%;
+
+                                .experience-item {
+                                    display: block;
+
+                                    .right {
+                                        text-align: left;
+                                        margin-top: 15px;
+                                        display: block;
+                                    }
+
+                                    .center {
+                                        width: 100%;
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+    .bm-item-list a {
+        margin: 24px 0;
+        font-size: 18px;
+    }
+
+    .about-section {
+        padding-top: 50px !important;
+    }
+
+    .project-section {
+        .project {
+            .inner-section {
+                .grid-layout {
+                    .grid-item-2 {
+                        background-position: top right;
+
+                        span[title="Industry"] {
+                            display: inline-block;
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    .grid-item-3 {
+                        background-position: right;
+                        background-position-y: -35px;
+                        background-size: 65%;
+                    }
+
+                    .grid-item-4 { 
+                        background-position-x: right;
+                        background-size: 60%;
+                    }
+
+                    .grid-item-5 { 
+                        background-position-x: right;
+                        background-size: 60%;
+                    }
+
+                    .grid-item-3, .grid-item-4, .grid-item-5 {
+                        grid-column-end: span 2;
+                        grid-row-end: span 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .expedu-section {
+        .education {
+            .inner-section {
+                .row {
+                    display: block;
+                    padding: 5px 10px;
+                    .item {
+                        margin: 0;
+                        &:nth-child(2) {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-section {
+        .contact {
+            .inner-section {
+                p {
+                    span {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .profession-section {
+        .profession {
+            .inner-section-left {
+                h1 {
+                    br {
+                        display: none;
+                    }
+                }
+            }
+
+            .inner-section-right {
+                transform: scale(0.8);
+            }
+        }
+    }
+
+    .service-section {
+        .row {
+            margin: 0 auto !important;
+            display: flex !important;
+            flex-direction: column;
+
+            .column {
+                padding: 10px 0 !important;
+            }
+        }
+    }
+}
