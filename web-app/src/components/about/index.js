@@ -24,27 +24,27 @@ function About() {
                     <div className="left-inner-section">
                         <div className="social-sphere">
                             <div className="social-icons">
-                                <a href="https://www.facebook.com/denisroystan03" target="_blank" className="deg0">
+                                <a href="https://www.facebook.com/denisroystan03" target="_blank" rel="noopener noreferrer" className="deg0">
                                     <div className="shine-me"></div>
                                     <img src="/persona/assets/fb.png" className="facebook" />
                                 </a>
-                                <a href="https://www.instagram.com/denisroystan/" target="_blank" className="deg45">
+                                <a href="https://www.instagram.com/denisroystan/" target="_blank" rel="noopener noreferrer" className="deg45">
                                     <div className="shine-me"></div>
                                     <img src="/persona/assets/ig.png" className="instagram" />
                                 </a>
-                                <a href="https://in.linkedin.com/in/denisroystan" target="_blank" className="deg135"> 
+                                <a href="https://in.linkedin.com/in/denisroystan" target="_blank" rel="noopener noreferrer" className="deg135"> 
                                     <div className="shine-me"></div>
                                     <img src="/persona/assets/in.png" className="linkedin" />
                                 </a>
-                                <a href="https://twitter.com/denisroystan" target="_blank" className="deg180">
+                                <a href="https://twitter.com/denisroystan" target="_blank" rel="noopener noreferrer" className="deg180">
                                     <div className="shine-me"></div>
                                     <img src="/persona/assets/tw.png" className="twitter" />
                                 </a>
-                                <a href="https://api.whatsapp.com/send?phone=919619065737" target="_blank" className="deg225">
+                                <a href="https://api.whatsapp.com/send?phone=919619065737" target="_blank" rel="noopener noreferrer" className="deg225">
                                     <div className="shine-me"></div>
                                     <img src="/persona/assets/wa.png" className="whatsapp" />
                                 </a>
-                                <a href="#" target="_blank" className="deg315">
+                                <a href="#" target="_blank" rel="noopener noreferrer" className="deg315">
                                     <div className="shine-me"></div>
                                     <img src="/persona/assets/yt.png" className="youtube" />
                                 </a>
@@ -75,7 +75,7 @@ function About() {
                             </HashLink>
                         </button> 
                         <button className="resume">
-                            <a href="/persona/documents/Denis-Dalmeida-CV.pdf" target="_blank">{ aboutData.button2 }</a>                            
+                            <a href="/persona/documents/Denis-Dalmeida-CV.pdf" target="_blank" rel="noopener noreferrer">{ aboutData.button2 }</a>                            
                         </button>
                     </div>                    
                 </div>                
